@@ -1,0 +1,123 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+
+s-2{
+background: url(../img/p4.jpg) center no-repeat;
+background-size: cover;
+display: block;
+height: 1000px;
+}
+
+
+s-2 c-flex{
+display: flex;
+flex-direction: row;
+gap: 20px;
+height: 400px;
+flex-wrap: wrap;
+}
+s-2 card{
+margin-top: 40px;
+position: relative;
+background-color: #fff;
+height: 200px;
+width: 250px;
+border-radius: 30px;
+cursor: pointer;
+transition:all 0.5s ease-in-out;
+}
+
+s-2 person{
+position: absolute;
+top: -50px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+height:210px;
+width:210px;
+background-color: burlywood;
+border-radius: 30px;
+z-index: 1;
+transition:all .1s ease-in-out;
+box-shadow: 0px 8px 21px -9px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 8px 21px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 8px 21px -9px rgba(0,0,0,0.75);
+
+}
+
+s-2 card:nth-of-type(1) person{
+background:  url(../img/f-1.jpg) center no-repeat;
+background-size: cover;
+}
+s-2 card:nth-of-type(2) person{
+background:  url(../img/f-2.jpg) center no-repeat;
+background-size: cover;
+}
+s-2 card:nth-of-type(3) person{
+background:  url(../img/f-3.jpg) center no-repeat;
+background-size: cover;
+}
+
+s-2 text{
+opacity: 0;
+position: absolute;
+top: 145px;
+display: flex;
+flex-direction: column;
+gap:1px ;
+margin: 20px;
+height: fit-content;
+transform: translateY(-100px);
+align-items: center;
+justify-content: center;
+transition:all .5s ease-in-out;
+
+}
+s-2 card:hover{
+height: 340px;
+}
+s-2 card:hover text{
+opacity: 1;
+transform: translateX(0);
+}
+/* s-2 card:hover person{
+
+} */
+s-2 text h1{
+font-size: 20px;
+line-height: 30px;
+
+}
+s-2 text p{
+margin: 0;
+text-align: center;
+}
+s-2 button{
+padding:  5px 10px;
+outline: none;
+border: 2px #404040 solid;
+border-radius: 50px;
+background-color: transparent;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 2px;
+font-size: 12px;
+margin-top: 15px;
+}
+
+s-2 button:hover{
+background-color: #404040;
+color: #f6f6f8;
+}
+s-2 headline{
+font-size: 4rem;
+color: #f6f6f8;
+text-align: center;
+}

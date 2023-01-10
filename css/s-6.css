@@ -1,0 +1,156 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+s-6{
+display: block;
+height: fit-content;
+background: url(../img/p3-1.jpg) center no-repeat;
+background-size: cover;
+
+}
+
+s-6 flex{
+display: block;
+color: aliceblue;
+}
+
+s-6 flex h1{
+font-size: 4rem;
+margin-bottom: 30px;
+}
+
+s-6 form{
+display: flex;
+flex-direction: column;
+}
+
+s-6 form input{
+height: 50px;
+margin-bottom: 40px;
+border-radius: 30px;
+padding: 15px;
+font-size: 16px;
+}
+
+s-6 form input::placeholder{
+text-transform: capitalize;
+
+}
+s-6 form input:last-of-type{
+background-color: rgb(0, 0, 0);
+color: #f1f1f1;
+outline: none;
+border: none;
+text-transform: uppercase;
+letter-spacing: 3px;
+font-weight: bold;
+}
+
+s-6 form input:last-of-type:hover{
+background-color: rgb(23, 23, 23);
+}
+
+
+s-6 form label{
+text-transform: capitalize;
+font-size: 18px;
+}
+
+s-6 ul{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+flex-direction: row;
+height:50px;
+overflow: hidden;
+list-style: none;
+}
+s-6 li{
+position: relative;
+}
+s-6 li a{
+display: block;
+font-size: 25px;
+text-decoration: none;
+width: fit-content;
+height: 50px;
+overflow: hidden;
+
+}
+s-6 icon {
+position: absolute;
+top: 0;
+left: 0;
+border-radius: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 50px;
+width: 50px;
+background-color: #404040;
+color: white;
+z-index: 1;
+}
+s-6 text{
+display: flex;
+align-items: center;
+justify-content: center;
+text-transform: capitalize;
+transition: 0.5s;
+height: 50px;
+width: 50px;
+overflow: hidden;
+border-radius: 50px;
+font-size: 15px;
+transition: 1s;
+
+}
+
+s-6 li:hover  text{
+padding: 10px 20px;
+padding-left: 60px;
+width: fit-content;
+}
+s-6 li text{
+color: white;
+}
+
+s-6 li:nth-of-type(1):hover icon{
+color: #3b5998;
+background-color: white;
+border: #3b5998 1px solid;
+}
+s-6 li:nth-of-type(1)  text{
+background-color: #3b5998;
+}
+
+s-6 li:nth-of-type(2):hover icon{
+color: #ff0000;
+background-color: white;
+border: #ff0000 1px solid;
+}
+s-6 li:nth-of-type(2)  text{
+background-color: #ff0000;
+}
+
+s-6 li:nth-of-type(3):hover icon{
+color: #c32aa3;
+background-color: white;
+border: #c32aa3 1px solid;
+}
+s-6 li:nth-of-type(3)  text{
+background-color: #c32aa3;
+}
+
+s-6 li:nth-of-type(4):hover icon{
+color: #bd081c;
+background-color: white;
+border: #bd081c 1px solid;
+}
+s-6 li:nth-of-type(4)  text{
+background-color: #bd081c;
+}

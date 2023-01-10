@@ -1,0 +1,119 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+/* font-family: 'Montserrat Alternates', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+}
+
+s-4{
+display:block ;
+height: fit-content;
+padding: 100px 0;
+background: url(../img/p2-b.jpg) no-repeat center;
+background-size: cover;
+background-color: #f1f1f1;
+}
+
+s-4 h1{
+color: aliceblue;
+font-size: 4rem;
+text-align: center;
+}
+
+s-4 flex{
+display: flex;
+align-items: row;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+s-4 card{
+position: relative;
+display: block;
+margin: 20px 10px;
+width: 350px;
+z-index: 1;
+}
+s-4 card content{
+position: relative;
+display: flex;
+color: aliceblue;
+flex-direction: column;
+padding: 30px ;
+padding-bottom: 10px;
+border-radius: 30px;
+background-color: rgba(0, 0, 0, 0.701);
+z-index: 1;
+height: fit-content;
+width: 350px;
+transition: .5s;
+overflow: hidden;
+
+}
+s-4 card h1{
+font-size: 20px;
+color: #eeb165;
+font-weight: bold;
+position: relative;
+width: fit-content;
+padding: 5px;
+margin-bottom: 20px;
+text-align: left;
+}
+
+s-4 card p{
+font-style: italic;
+transition: .3s;
+}
+
+s-4 card button{
+position: absolute;
+bottom:-40px;
+border: none;
+width: fit-content;
+font-size: 14px;
+padding: 5px 30px;
+align-self: center;
+border-radius: 20px;
+transition: .5s;
+display: block;
+font-weight: bold;
+letter-spacing: 1.5px;
+text-transform: capitalize;
+}
+s-4 card button:hover{
+padding: 10px 40px;
+background-color: #f2b469;
+
+}
+
+s-4 card:hover button{
+bottom: 20px;
+}
+
+s-4 card:hover p{
+filter: grayscale(93%) blur(2px);
+-webkit-filter: grayscale(93%) blur(2px);
+-moz-filter: grayscale(93%) blur(2px);
+}
+
+
+
+s-4 card:hover content{
+scale: 95%;
+}
+s-4 card h1::before{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+height: 2px;
+background-color: #eeb165;
+transition: all .5s ;
+width: 0;
+}
+s-4 card:hover h1::before{
+width: 100%;
+}

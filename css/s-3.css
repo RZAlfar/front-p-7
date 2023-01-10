@@ -1,0 +1,170 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box
+}
+
+s-3{
+height: 600px;
+display: block;
+background-color: #ececec;
+}
+
+s-3 flex{
+display: flex;
+flex-direction: column;
+align-self: flex-start;
+align-items: center;
+justify-content: center;
+height: 100%;
+}
+s-3 flex h1 {
+text-transform: capitalize;
+text-align: center;
+font-size: 4rem;
+padding: 20px 0;
+}
+s-3 flex p{
+padding: 20px 0;
+text-align: center;
+}
+
+s-3 flex button{
+padding:  20px 70px;
+outline: none;
+border: 2px #404040 solid;
+border-radius: 50px;
+background-color: transparent;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+s-3 flex button:hover{
+background-color: #404040;
+color: #f6f6f8;
+}
+
+s-3 card{
+position: relative;
+width: auto;
+height: 450px;
+border-radius: 20PX;
+display: flex;
+align-items: center;
+transition: .5s;
+}
+s-3 circle{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+border-radius:20px;
+}
+
+s-3 circle::before{
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+border-radius:20px;
+
+height: 100%;
+background-color: burlywood;
+clip-path: circle(120px at center);
+transition: .5s;
+}
+s-3 circle:hover:before{
+clip-path: circle(400px at center);
+background-color:#977a72;
+}
+
+s-3 card img{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+pointer-events: none;
+height: 200px;
+transition: .5s;
+}
+s-3 card:hover img{
+left: 75%;
+height: 350px;
+}
+
+s-3 content{
+position: absolute;
+width: 45%;
+left: 20%;
+top: 10%;
+padding: 20px 20px 20px 40px;
+transition: .5s;
+opacity: 0;
+visibility: hidden;
+display: flex;
+gap: 20px;
+flex-direction: column;
+}
+
+s-3 card:hover content{
+left:0;
+opacity: 1;
+visibility: visible;
+}
+s-3 content h2{
+color: #fff;
+text-transform: uppercase;
+font-size: 2rem;
+}
+
+s-3 content p{
+color: #fff;
+}
+
+s-3 content a{
+text-decoration: none;
+color: black;
+background-color: #fff;
+padding: 10px 20px;
+border-radius: 10px;
+width: fit-content;
+text-transform: uppercase;
+font-weight: bolder;
+transition: .5s;
+}
+
+s-3 content a:hover{
+scale: 110%;
+}
+
+@media(max-width:991px) {
+  s-3 card{
+  max-width: 350px;
+  align-items: flex-start;
+  }
+  s-3 card:hover{
+  height: 500px;
+  }
+  s-3 content {
+  left: 0;
+  top: 20px;
+  padding: 40px;
+  width: 100%;
+  }
+  
+  s-3 card:hover img{
+  top: 75%;
+  left:50%;
+  height: 200px;
+  }
+}
+@media(max-width:420px) {
+
+  s-3 content {
+  padding: 20px;
+  }
+
+}

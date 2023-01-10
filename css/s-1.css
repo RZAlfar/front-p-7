@@ -1,0 +1,46 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+s-1{
+display: block;
+height: 600px;
+background: url(../img/p-w.jpg) center no-repeat;
+background-size: cover;
+}
+s-1 flex{
+display: flex;
+flex-direction: column;
+align-self: flex-start;
+align-items: center;
+justify-content: center;
+height: 100%;
+}
+s-1 flex h1 {
+text-transform: capitalize;
+text-align: center;
+font-size: 4rem;
+padding: 20px 0;
+}
+s-1 flex p{
+padding: 20px 0;
+text-align: center;
+}
+
+s-1 flex button{
+padding:  20px 70px;
+outline: none;
+border: 2px #404040 solid;
+border-radius: 50px;
+background-color: transparent;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+s-1 flex button:hover{
+background-color: #404040;
+color: #f6f6f8;
+}
