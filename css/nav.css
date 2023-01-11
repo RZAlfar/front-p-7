@@ -60,6 +60,13 @@ nav .dropdown-item{
 text-transform: capitalize  ;
 }
 
+.nav-item  .nav-link  {
+ border-bottom: 2px solid transparent;
+}
+
+.nav-item  .nav-link.active  {
+ border-bottom: 2px solid #ffc107;
+}
 nav .btn-warning{
 font-weight: bold;
 border: 2px solid #ffc107;
@@ -70,5 +77,6 @@ nav .btn-warning:hover{
 background-color: transparent;
 color: #ffc107;
 border: 2px solid #ffc107;
-
 }
+
+
